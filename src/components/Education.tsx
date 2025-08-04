@@ -9,8 +9,9 @@ const education: EducationItem[] = [
     title: "프로그래머스 풀스택 데브코스 4기",
     period: "2024.08 - 2025.02",
     description: [
-      "타입스크립트로 함께하는 웹 풀사이클 개발(Node.js, TypeScript) 과정 수료",
-      "JavaScript/TypeScript, React, node.js, express 환경의 전반적인 웹 기술 학습",
+      "타입스크립트로 함께하는 웹 풀사이클 개발(Node.js, Typescript) 과정 수료",
+      "Javascript, Typescript, React, Node.js, Express 환경의 전반적인 웹 기술 학습",
+      "Git, Github 및 Slack을 활용한 팀프로젝트 경험",
     ],
   },
   {
@@ -29,19 +30,19 @@ export default function Education() {
   return (
     <section className="mb-8">
       <div className="max-w-3xl mx-auto">
-        <h1 className="text-3xl font-semibold mb-6">
-          Education
-          <span className="text-blue-500 rounded-full">.</span>
+        <h1 className="text-3xl font-semibold text-transparent bg-gradient-to-b from-[#93c5fd] to-[#2563eb] bg-clip-text mb-3">
+          교육
         </h1>
-        <div className="space-y-10 text-gray-700 leading-relaxed">
+        <hr className="border-blue-300 w-12 mb-8" />
+        <div className="space-y-12 text-gray-700 leading-relaxed">
           {education.map((item, index) => {
             return (
               <div key={index}>
                 <div>
-                  <h3 className="text-xl font-semibold text-gray-900">
+                  <h3 className="text-2xl font-semibold text-gray-900 mb-1">
                     {item.title}
                   </h3>
-                  <p>{item.period}</p>
+                  <p className="text-sm text-gray-500">{item.period}</p>
                 </div>
                 <ul>
                   {item.description.map((item, index) => {

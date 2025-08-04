@@ -7,7 +7,7 @@ import Education from "@/components/Education";
 import Community from "@/components/Community";
 
 export const metadata: Metadata = {
-  title: "김영완 - 이력서",
+  title: "김영완 이력서",
   description: "프론트엔드 개발자 김영완의 이력서입니다.",
 };
 
