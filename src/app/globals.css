@@ -24,3 +24,33 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* 인쇄용 스타일 */
+@media print {
+  /* 그라데이션 텍스트를 인쇄에서도 보이도록 설정 */
+  .bg-clip-text {
+    -webkit-print-color-adjust: exact !important;
+    color-adjust: exact !important;
+    background-clip: text !important;
+    -webkit-background-clip: text !important;
+  }
+
+  /* 인쇄 시 배경색과 색상이 제대로 표시되도록 설정 */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    color-adjust: exact !important;
+  }
+
+  /* 인쇄 시 페이지 설정 */
+  @page {
+    margin: 1in;
+    size: A4;
+  }
+
+  /* 인쇄 시 불필요한 요소 숨김 */
+  @media print {
+    .no-print {
+      display: none !important;
+    }
+  }
+}
