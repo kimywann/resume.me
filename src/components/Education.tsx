@@ -28,7 +28,7 @@ const education: EducationItem[] = [
 
 export default function Education() {
   return (
-    <section className="mb-8">
+    <section className="mb-12">
       <div className="max-w-3xl mx-auto">
         <h1 className="text-3xl font-semibold text-transparent bg-gradient-to-b from-[#93c5fd] to-[#2563eb] bg-clip-text mb-3">
           교육
@@ -39,17 +39,17 @@ export default function Education() {
             return (
               <div key={index}>
                 <div>
-                  <h3 className="text-2xl font-semibold text-gray-900 mb-1">
+                  <h3 className="text-2xl font-semibold text-gray-900">
                     {item.title}
                   </h3>
-                  <p className="text-sm text-gray-500">{item.period}</p>
+                  <p className="text-sm text-gray-500 mb-2">{item.period}</p>
                 </div>
                 <ul>
                   {item.description.map((item, index) => {
                     return (
-                      <li key={index}>
+                      <li key={index} className="mb-2">
                         <span className="text-blue-400 text-xl mr-2">•</span>
-                        {item}
+                        <span className="text-md">{item}</span>
                       </li>
                     );
                   })}

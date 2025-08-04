@@ -16,7 +16,7 @@ const community: CommunityItem[] = [
 
 export default function Community() {
   return (
-    <section className="mb-8">
+    <section className="mb-6">
       <div className="max-w-3xl mx-auto">
         <h1 className="text-3xl font-semibold text-transparent bg-gradient-to-b from-[#93c5fd] to-[#2563eb] bg-clip-text mb-3">
           기타
@@ -27,16 +27,20 @@ export default function Community() {
             return (
               <div key={index}>
                 <div>
-                  <h3 className="text-2xl font-semibold text-gray-900 mb-2">
+                  <h3 className="text-2xl font-semibold text-gray-900">
                     {item.title}
                   </h3>
                   <p className="text-sm text-gray-500 mb-2">{item.period}</p>
                 </div>
-                <ul className="list-disc list-inside pl-3 text-md">
-                  {item.description.map((item, index) => {
-                    return <li key={index}>{item}</li>;
-                  })}
-                </ul>
+
+                {item.description.map((item, index) => {
+                  return (
+                    <span key={index} className="text-md">
+                      <span className="text-blue-400 text-2xl mr-2">•</span>
+                      {item}
+                    </span>
+                  );
+                })}
               </div>
             );
           })}
