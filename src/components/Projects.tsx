@@ -79,7 +79,17 @@ export default function Experience() {
                   <p className="text-lg text-gray-500">{exp.description}</p>
                 </div>
               </div>
-              <div className="flex gap-4 mb-7 text-blue-500">
+              <div className="flex mb-4">
+                {exp.technologies.map((tech, techIndex) => (
+                  <span
+                    key={techIndex}
+                    className="text-gray-500 text-sm py-1 px-2 bg-gray-100 rounded-lg mr-2"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+              <div className="flex gap-4 mb-8 text-blue-500">
                 <span>
                   <a
                     href={exp.githubUrl}
@@ -129,14 +139,6 @@ export default function Experience() {
                         </ul>
                       )}
                     </li>
-                  ))}
-                  {exp.technologies.map((tech, techIndex) => (
-                    <span
-                      key={techIndex}
-                      className="text-gray-500 text-sm py-1 px-2 bg-gray-100 rounded-lg mr-2"
-                    >
-                      {tech}
-                    </span>
                   ))}
                 </ul>
               </section>
