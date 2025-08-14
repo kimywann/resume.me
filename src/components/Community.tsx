@@ -1,6 +1,7 @@
 interface CommunityItem {
   title: string;
   period: string;
+  link: string;
   description: string[];
 }
 
@@ -8,6 +9,7 @@ const community: CommunityItem[] = [
   {
     title: "Typescript 스터디",
     period: "2024.08 - 2025.02",
+    link: "스터디 기록 링크",
     description: [
       `"타입스크립트 교과서" 도서를 기반으로 매주 스터디를 진행하며, 학습한 내용을 정리해 발표하고 팀원들과 지식 공유를 한 경험이 있습니다.`,
     ],
@@ -31,6 +33,12 @@ export default function Community() {
                     {item.title}
                   </h3>
                   <p className="text-sm text-gray-500 mb-2">{item.period}</p>
+                  <a
+                    className="hover: cursor-pointer text-blue-500 hover:underline"
+                    href="https://imminent-lunch-7f5.notion.site/18169751594480409bdbe4164170eeee?pvs=74"
+                  >
+                    {item.link}
+                  </a>
                 </div>
 
                 {item.description.map((item, index) => {
