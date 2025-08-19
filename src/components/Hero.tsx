@@ -30,14 +30,6 @@ export default function Hero() {
               GitHub
             </a>
           </p>
-          <p>
-            <a
-              href="tel:01092913036"
-              className="text-blue-500 font-medium hover:underline text-md"
-            >
-              010-9291-3036
-            </a>
-          </p>
         </div>
       </div>
     </section>
