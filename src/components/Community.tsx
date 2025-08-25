@@ -44,7 +44,7 @@ export default function Community() {
                 {item.description.map((item, index) => {
                   return (
                     <span key={index} className="text-md">
-                      <span className="text-blue-400 text-2xl mr-2">•</span>
+                      <span className="text-2xl mr-2">•</span>
                       {item}
                     </span>
                   );

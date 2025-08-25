@@ -48,7 +48,7 @@ export default function Education() {
                   {item.description.map((item, index) => {
                     return (
                       <li key={index} className="mb-2">
-                        <span className="text-blue-400 text-xl mr-2">•</span>
+                        <span className="text-2xl mr-2">•</span>
                         <span className="text-md">{item}</span>
                       </li>
                     );
