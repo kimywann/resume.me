@@ -2,7 +2,7 @@ export default function Hero() {
   return (
     <section className="proflie">
       <div className="text-left mb-6">
-        <h1 className="text-4xl font-semibold text-transparent bg-gradient-to-b from-[#93c5fd] to-[#2563eb] bg-clip-text mb-5">
+        <h1 className="text-4xl font-semibold text-transparent bg-gradient-to-b from-[#93c5fd] to-[#2563eb] bg-clip-text mb-5 gap-2 flex flex-col">
           Frontend Developer
           <p className="font-semibold text-4xl">김영완</p>
         </h1>
