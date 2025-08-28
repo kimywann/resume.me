@@ -12,7 +12,7 @@ interface ProjectsItem {
 
 const projects: ProjectsItem[] = [
   {
-    title: "WiseSub (개인프로젝트)",
+    title: "WiseSub(개인프로젝트)",
     position: "프론트엔드 개발자",
     period: "2025.07.01 - 2025.08.04",
     description:
