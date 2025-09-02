@@ -34,7 +34,7 @@ export default function Community() {
                   </h3>
                   <p className="text-sm text-gray-500 mb-2">{item.period}</p>
                   <a
-                    className="hover: cursor-pointer text-blue-500 hover:underline"
+                    className="cursor-pointer text-blue-500 hover:underline font-semibold"
                     href="https://imminent-lunch-7f5.notion.site/18169751594480409bdbe4164170eeee?pvs=74"
                   >
                     {item.link}
