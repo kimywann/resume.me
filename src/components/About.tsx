@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <section>
-      <div className="max-w-3xl mx-auto text-gray-700 leading-relaxed">
+      <div className="max-w-3xl mx-auto text-black leading-relaxed">
         <p>
           안녕하세요, 김영완입니다. 프론트엔드는 사용자가 가장 먼저 접하는
           영역인 만큼, 사용자에게 서비스의 첫인상을 주는 중요한 역할이라고

@@ -10,6 +10,102 @@ export default function Projects() {
           <div>
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
               <div>
+                <h3 className="text-2xl font-semibold">GAME DB</h3>
+                <p className="text-gray-500 text-sm">2025.09.02 - 진행 중</p>
+                <p className="text-gray-500 text-sm">개인 프로젝트</p>
+                <p className="text-md text-gray-600 mt-2 mb-1">
+                  RAWG API를 활용한 게임 정보 웹 서비스
+                </p>
+              </div>
+            </div>
+            <div className="flex mb-4">
+              <span className="text-gray-500 text-sm py-1 px-2 bg-gray-100 rounded-lg mr-2">
+                Next.js
+              </span>
+              <span className="text-gray-500 text-sm py-1 px-2 bg-gray-100 rounded-lg mr-2">
+                React.js
+              </span>
+              <span className="text-gray-500 text-sm py-1 px-2 bg-gray-100 rounded-lg mr-2">
+                TypeScript
+              </span>
+              <span className="text-gray-500 text-sm py-1 px-2 bg-gray-100 rounded-lg mr-2">
+                Tailwind CSS
+              </span>
+              <span className="text-gray-500 text-sm py-1 px-2 bg-gray-100 rounded-lg mr-2">
+                Tanstack Query
+              </span>
+              <span className="text-gray-500 text-sm py-1 px-2 bg-gray-100 rounded-lg mr-2">
+                RAWG API
+              </span>
+              <span className="text-gray-500 text-sm py-1 px-2 bg-gray-100 rounded-lg mr-2">
+                Vercel
+              </span>
+            </div>
+            <div className="flex gap-4 mb-12 text-blue-500 font-semibold">
+              <span>
+                <a
+                  href="https://github.com/kimywann/rawg-game-database"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline"
+                >
+                  Github 저장소
+                </a>
+              </span>
+              <span>
+                <a
+                  href="https://rawg-game-database.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline"
+                >
+                  배포 페이지
+                </a>
+              </span>
+            </div>
+            <section>
+              <p className="text-xl mb-4 font-semibold">개발 및 기여 내용</p>
+              <ul className="space-y-2 list-disc list-outside text-lg text-black pl-6">
+                <li className="text-indent-0">
+                  <a
+                    href="https://kimywan.tistory.com/80"
+                    className=" text-blue-500 font-semibold"
+                  >
+                    클라이언트 컴포넌트에서 API Key가 노출되는 문제를 Route
+                    Handlers를 통해 해결
+                  </a>
+                  하여 클라이언트가 서버를 통해 외부 API에 접근하는 구조를
+                  구축하여 API Key를 안전하게 관리하고, 클라이언트-서버 간의
+                  역할 분리
+                </li>
+                <li className="text-indent-0">
+                  useInfiniteQuery와 Intersection Observer API 활용하여 무한
+                  스크롤 구현, 게임 목록 조회 시 사용자 경험 개선
+                </li>
+                <li className="text-indent-0">
+                  리렌더링 시 발생하는 불필요한 API 재호출 문제 →{" "}
+                  <a href="https://kimywan.tistory.com/81">
+                    TanStack Query의 데이터 갱신 주기 설정 staleTime, gcTime을
+                    통해
+                    <span className="ml-1 text-blue-500 font-semibold">
+                      데이터를 캐싱하여 재요청하지 않게 불필요한 중복 요청
+                      최소화
+                    </span>
+                  </a>
+                </li>
+                <li className="text-indent-0">
+                  반응형 디자인 도입으로 PC 및 모바일 환경에서 웹 서비스를
+                  가능하도록 개선
+                </li>
+              </ul>
+            </section>
+          </div>
+        </div>
+        <hr className="border-zinc-100 w-full mb-8 mt-10" />
+        <div className="space-y-8 mt-10">
+          <div>
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
+              <div>
                 <h3 className="text-2xl font-semibold">WiseSub</h3>
                 <p className="text-gray-500 text-sm">2025.07.01 - 진행 중</p>
                 <p className="text-gray-500 text-sm">개인 프로젝트</p>
@@ -47,7 +143,7 @@ export default function Projects() {
                 Vercel
               </span>
             </div>
-            <div className="flex gap-4 mb-8 text-blue-500 font-semibold">
+            <div className="flex gap-4 mb-12 text-blue-500 font-semibold">
               <span>
                 <a
                   href="https://github.com/kimywann/wise-sub"
@@ -80,52 +176,36 @@ export default function Projects() {
               </span>
             </div>
             <section>
-              <p className="text-lg mb-4 font-semibold">개발 및 기여 내용</p>
-              <ul className="space-y-1 list-disc list-inside marker:text-xl text-gray-700">
-                <li>Supabase 기반 구독 관리 시스템</li>
-                <li className="ml-6 list-[circle]">
-                  PostgreSQL 데이터베이스와 RESTful API를 활용한 구독 데이터
-                  CRUD 구현
+              <p className="text-xl mb-4 font-semibold">개발 및 기여 내용</p>
+              <ul className="space-y-2 list-disc list-outside text-lg text-black pl-6">
+                <li className="text-indent-0">
+                  Supabase에 기반한 DB와 RESTful API를 활용한 구독 데이터 CRUD
+                  구현
                 </li>
-                <li>
-                  {" "}
-                  <a
-                    href="https://kimywan.tistory.com/78"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="underline font-semibold text-slate-500"
-                  >
-                    Dashboard와 Chart 컴포넌트 간 동일한 구독 데이터 공유
-                  </a>
+                <li className="text-indent-0">
+                  컴포넌트 간 동일한 구독 데이터 공유 Zustand 전역 상태 관리
+                  라이브러리 도입으로 Props Drilling 제거, persist 미들웨어로
+                  데이터 영속성 확보 → 전역 상태로 실시간 데이터 동기화
                 </li>
-                <li className="ml-6 list-[circle]">
-                  Zustand 전역 상태 관리 라이브러리 도입 → Props Drilling 제거
+                <li className="text-indent-0">
+                  월별 비용과 구독 개수를 한눈에 파악하기 어렵다는 문제를
+                  해결하고자, 최근 1년간의 구독 데이터를 기반으로{" "}
+                  <span className="font-semibold text-blue-500">
+                    Recharts 시각화 대시보드 구축
+                  </span>
                 </li>
-                <li className="ml-6 list-[circle]">
-                  persist 미들웨어로 데이터 영속성 확보 → 전역 상태로 실시간
-                  데이터 동기화
+                <li className="text-indent-0">
+                  1년간의 비용 변화 추세를 LineChart로, 월별 구독 개수를
+                  BarChart로 구현하여 데이터의 목적에 맞는 시각화 대시보드 제공
                 </li>
-                <li>월별 비용 및 구독 개수 시각화 구현</li>
-                <li className="ml-6 list-[circle]">
-                  Recharts 기반의 데이터 시각화 환경 구축 → LineChart(비용
-                  추이), BarChart(구독 개수) 구현
+                <li className="text-indent-0">
+                  Tailwind CSS와 clsx를 활용, 월간/연간 구독 옵션을 조건부
+                  스타일링하여 사용자가 결제 주기를 명확하게 구분하도록 개선
                 </li>
-                <li className="ml-6 list-[circle]">
-                  ResponsiveContainer를 적용해 모든 디바이스에 최적화된 차트
-                  제공
-                </li>
-                <li>결제 주기별 동적 UI 및 조건부 렌더링</li>
-                <li className="ml-6 list-[circle]">
-                  clsx + Tailwind CSS → 조건부 스타일링으로 월간/연간 구독
-                  구분 표시
-                </li>
-                <li>폼 검증 및 사용자 경험 최적화</li>
-                <li className="ml-6 list-[circle]">
-                  useRef 기반 자동 포커스 → 검증 실패 시 해당 입력 필드로 이동
-                </li>
-                <li className="ml-6 list-[circle]">
-                  실시간 에러 메시지 표시 → 이메일, 비밀번호, 로그인 실패
-                  등 피드백 제공
+                <li className="text-indent-0">
+                  useRef와 상태 관리를 통해 실시간 에러 메시지 표시, 입력 오류
+                  발생 시 자동으로 해당 필드에 포커스를 이동시켜 사용자에게
+                  피드백 제공
                 </li>
               </ul>
             </section>
