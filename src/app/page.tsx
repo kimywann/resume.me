@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
-import Hero from "@/components/Hero";
 import About from "@/components/About";
+import Contact from "@/components/Contact";
 import Projects from "@/components/Projects";
 import Education from "@/components/Education";
 import Community from "@/components/Community";
@@ -15,11 +15,11 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       <div className="max-w-3xl mx-auto px-4 py-8">
-        <Hero />
         <About />
         <Projects />
         <Education />
         <Community />
+        <Contact />
       </div>
     </main>
   );

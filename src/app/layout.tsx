@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "김영완 이력서",
+  title: "이력서 - 김영완",
   description: "프론트엔드 개발자 김영완의 이력서입니다.",
   icons: {
     icon: "/favicon.png",
